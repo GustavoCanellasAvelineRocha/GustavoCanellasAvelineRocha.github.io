@@ -1769,12 +1769,15 @@ button {
 
 .gallery__item {
   display: grid;
-  gap: 10px;
+  gap: 16px;
 }
 
 .gallery__item figcaption {
-  font-size: 14px;
-  color: var(--ink-2);
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  text-wrap: pretty;
 }
 
 .gallery__item:nth-child(1) {
